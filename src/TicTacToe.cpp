@@ -1,9 +1,11 @@
 #include <SFML/Graphics.hpp>
+#include "PageGrilleDeJeu.h"
 
 using namespace sf;
 int main()
 {
     RenderWindow * fenetre = new RenderWindow(VideoMode(1000, 1000), "SFML !");
+    PageGrilleDeJeu * pageGrilleDeJeu = new PageGrilleDeJeu(fenetre);
     while (fenetre->isOpen())
     {
         Event evenement;
@@ -13,6 +15,7 @@ int main()
                 fenetre->close();
         }
         fenetre->clear();
+        pageGrilleDeJeu->afficher();
         fenetre->display();
     }
     return 0;
