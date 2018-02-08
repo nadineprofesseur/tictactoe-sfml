@@ -1,20 +1,19 @@
 #include <SFML/Graphics.hpp>
+
 using namespace sf;
 int main()
 {
-    RenderWindow fenetre(VideoMode(1000, 1000), "SFML !");
-    CircleShape cercle(50.f);
-    while (fenetre.isOpen())
+    RenderWindow * fenetre = new RenderWindow(VideoMode(1000, 1000), "SFML !");
+    while (fenetre->isOpen())
     {
         Event evenement;
-        while (fenetre.pollEvent(evenement))
+        while (fenetre->pollEvent(evenement))
         {
             if (evenement.type == Event::Closed)
-                fenetre.close();
+                fenetre->close();
         }
-        fenetre.clear();
-        fenetre.draw(cercle);
-        fenetre.display();
+        fenetre->clear();
+        fenetre->display();
     }
     return 0;
 }
