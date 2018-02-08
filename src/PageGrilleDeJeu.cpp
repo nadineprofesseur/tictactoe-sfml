@@ -17,7 +17,10 @@ PageGrilleDeJeu::~PageGrilleDeJeu() {
 void PageGrilleDeJeu::afficher() {
 	for(int colonne = 0; colonne < 3; colonne++)
 	{
-		caseBlanche.setPosition(colonne*TAILLE_CASE + DECALAGE_GRILLE_X, DECALAGE_GRILLE_Y);
-		this->fenetre->draw(this->caseBlanche);
+		for(int rangee = 0; rangee < 3; rangee++)
+		{
+			caseBlanche.setPosition(colonne*TAILLE_CASE + DECALAGE_GRILLE_X, rangee*TAILLE_CASE + DECALAGE_GRILLE_Y);
+			this->fenetre->draw(this->caseBlanche);
+		}
 	}
 }
