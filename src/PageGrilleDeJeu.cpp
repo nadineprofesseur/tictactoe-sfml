@@ -5,10 +5,9 @@
 #include "PageGrilleDeJeu.h"
 
 PageGrilleDeJeu::PageGrilleDeJeu(RenderWindow* fenetre) {
-	caseBlanche.setSize(sf::Vector2f(100, 100));
-	caseBlanche.setOutlineColor(sf::Color::White);
+	caseBlanche.setSize(sf::Vector2f(TAILLE_CASE-5, TAILLE_CASE-5));
+	caseBlanche.setOutlineColor(Color::Red);
 	caseBlanche.setOutlineThickness(5);
-	caseBlanche.setPosition(100, 100);
 	this->fenetre = fenetre;
 }
 
@@ -16,5 +15,9 @@ PageGrilleDeJeu::~PageGrilleDeJeu() {
 }
 
 void PageGrilleDeJeu::afficher() {
-	this->fenetre->draw(this->caseBlanche);
+	for(int colonne = 0; colonne < 3; colonne++)
+	{
+		caseBlanche.setPosition(colonne*TAILLE_CASE + DECALAGE_GRILLE_X, DECALAGE_GRILLE_Y);
+		this->fenetre->draw(this->caseBlanche);
+	}
 }

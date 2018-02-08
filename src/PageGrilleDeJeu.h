@@ -2,6 +2,10 @@
  * PageGrilleDeJeu.h
  */
 
+#define TAILLE_CASE 100
+#define DECALAGE_GRILLE_X 100
+#define DECALAGE_GRILLE_Y 200
+
 #ifndef PAGEGRILLEDEJEU_H_
 #define PAGEGRILLEDEJEU_H_
 
