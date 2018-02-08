@@ -3,7 +3,7 @@
  */
 
 #define TAILLE_CASE 100
-#define DECALAGE_GRILLE_X 100
+#define DECALAGE_GRILLE_X 250
 #define DECALAGE_GRILLE_Y 200
 
 #ifndef PAGEGRILLEDEJEU_H_
@@ -16,6 +16,7 @@ class PageGrilleDeJeu {
 
 protected:
 	RectangleShape caseBlanche;
+	RectangleShape zoneNom;
 	RenderWindow* fenetre;
 public:
 	PageGrilleDeJeu(RenderWindow* fenetre);

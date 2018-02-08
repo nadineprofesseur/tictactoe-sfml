@@ -4,7 +4,7 @@
 using namespace sf;
 int main()
 {
-    RenderWindow * fenetre = new RenderWindow(VideoMode(1000, 1000), "SFML !");
+    RenderWindow * fenetre = new RenderWindow(VideoMode(800, 800), "SFML !");
     PageGrilleDeJeu * pageGrilleDeJeu = new PageGrilleDeJeu(fenetre);
     while (fenetre->isOpen())
     {
