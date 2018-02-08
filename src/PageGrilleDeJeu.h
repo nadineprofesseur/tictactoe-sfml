@@ -17,6 +17,8 @@ class PageGrilleDeJeu {
 protected:
 	RectangleShape caseBlanche;
 	RectangleShape zoneNom;
+	//Text nomX;
+	Font * fonte;
 	RenderWindow* fenetre;
 public:
 	PageGrilleDeJeu(RenderWindow* fenetre);
