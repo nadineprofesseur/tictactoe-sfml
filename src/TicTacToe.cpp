@@ -1,15 +1,15 @@
 #include <SFML/Graphics.hpp>
+using namespace sf;
 int main()
 {
-    sf::RenderWindow fenetre(sf::VideoMode(200, 200), "SFML !");
-    sf::CircleShape cercle(100.f);
-    cercle.setFillColor(sf::Color::Green);
+    RenderWindow fenetre(VideoMode(1000, 1000), "SFML !");
+    CircleShape cercle(50.f);
     while (fenetre.isOpen())
     {
-        sf::Event evenement;
+        Event evenement;
         while (fenetre.pollEvent(evenement))
         {
-            if (evenement.type == sf::Event::Closed)
+            if (evenement.type == Event::Closed)
                 fenetre.close();
         }
         fenetre.clear();
@@ -18,3 +18,4 @@ int main()
     }
     return 0;
 }
+
