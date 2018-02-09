@@ -25,10 +25,12 @@ void PageGrilleDeJeu::afficher() {
 	this->fenetre->draw(zoneNom);
 
 	nomX.setFont(*fonte);
+	nomX.setPosition(550 + 10,50);
+	nomX.setCharacterSize(40);
+	nomX.setStyle(Text::Bold | Text::Regular);
 	nomX.setString("Nadine");
-	nomX.setCharacterSize(24);
-	nomX.setColor(Color::Green);
-	nomX.setStyle(Text::Bold | Text::Underlined);
+	nomX.setColor(Color::Red);
+	this->fenetre->draw(nomX);
 
 	for(int colonne = 0; colonne < 3; colonne++)
 	{
