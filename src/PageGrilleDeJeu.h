@@ -5,6 +5,10 @@
 #ifndef PAGEGRILLEDEJEU_H_
 #define PAGEGRILLEDEJEU_H_
 
+constexpr int TAILLE_CASE = 100;
+constexpr int DECALAGE_GRILLE_X = 250;
+constexpr int DECALAGE_GRILLE_Y = 200;
+
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
@@ -20,9 +24,6 @@ public:
 	PageGrilleDeJeu(RenderWindow* fenetre);
 	void afficher();
 	virtual ~PageGrilleDeJeu();
-	constexpr int TAILLE_CASE = 100;
-	constexpr int DECALAGE_GRILLE_X = 250;
-	constexpr int DECALAGE_GRILLE_Y = 200;
 };
 
 #endif /* PAGEGRILLEDEJEU_H_ */
