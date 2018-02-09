@@ -2,10 +2,6 @@
  * PageGrilleDeJeu.h
  */
 
-#define TAILLE_CASE 100
-#define DECALAGE_GRILLE_X 250
-#define DECALAGE_GRILLE_Y 200
-
 #ifndef PAGEGRILLEDEJEU_H_
 #define PAGEGRILLEDEJEU_H_
 
@@ -24,6 +20,9 @@ public:
 	PageGrilleDeJeu(RenderWindow* fenetre);
 	void afficher();
 	virtual ~PageGrilleDeJeu();
+	constexpr int TAILLE_CASE = 100;
+	constexpr int DECALAGE_GRILLE_X = 250;
+	constexpr int DECALAGE_GRILLE_Y = 200;
 };
 
 #endif /* PAGEGRILLEDEJEU_H_ */
