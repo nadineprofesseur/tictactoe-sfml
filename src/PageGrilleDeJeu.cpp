@@ -24,13 +24,6 @@ void PageGrilleDeJeu::afficher() {
 	zoneNom.setPosition(550,50);
 	this->fenetre->draw(zoneNom);
 
-	nomX.setFont(*fonte);
-	nomX.setPosition(550 + 10,50);
-	nomX.setCharacterSize(40);
-	nomX.setStyle(Text::Bold | Text::Regular);
-	nomX.setString("Nadine");
-	nomX.setColor(Color::Red);
-	this->fenetre->draw(nomX);
 
 	for(int colonne = 0; colonne < 3; colonne++)
 	{
@@ -40,4 +33,28 @@ void PageGrilleDeJeu::afficher() {
 			this->fenetre->draw(this->caseBlanche);
 		}
 	}
+	nomO.setFont(*fonte);
+	nomO.setPosition(50 + 10,50);
+	nomO.setCharacterSize(40);
+	nomO.setStyle(Text::Bold | Text::Regular);
+	nomO.setColor(Color::Red);
+
+	nomX.setFont(*fonte);
+	nomX.setPosition(550 + 10,50);
+	nomX.setCharacterSize(40);
+	nomX.setStyle(Text::Bold | Text::Regular);
+	nomX.setColor(Color::Red);
+
+}
+
+
+// TODO : redimensionner les textes selon la longueur
+void PageGrilleDeJeu::afficherNomO(std::string nom) {
+	nomO.setString(nom);
+	this->fenetre->draw(nomO);
+}
+// TODO : redimensionner les textes selon la longueur
+void PageGrilleDeJeu::afficherNomX(std::string nom) {
+	nomX.setString(nom);
+	this->fenetre->draw(nomX);
 }

@@ -18,12 +18,15 @@ protected:
 	RectangleShape caseBlanche;
 	RectangleShape zoneNom;
 	Text nomX;
+	Text nomO;
 	Font * fonte;
 	RenderWindow* fenetre;
 public:
 	PageGrilleDeJeu(RenderWindow* fenetre);
 	void afficher();
 	virtual ~PageGrilleDeJeu();
+	void afficherNomO(std::string);
+	void afficherNomX(std::string);
 };
 
 #endif /* PAGEGRILLEDEJEU_H_ */

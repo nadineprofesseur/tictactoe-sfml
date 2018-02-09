@@ -16,6 +16,8 @@ int main()
         }
         fenetre->clear();
         pageGrilleDeJeu->afficher();
+        pageGrilleDeJeu->afficherNomO("Nadine");
+        pageGrilleDeJeu->afficherNomX("Sophie");
         fenetre->display();
     }
     return 0;
