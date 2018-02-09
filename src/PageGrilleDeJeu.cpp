@@ -11,7 +11,7 @@ PageGrilleDeJeu::PageGrilleDeJeu(RenderWindow* fenetre) {
 	caseBlanche.setOutlineThickness(5);
 	zoneNom.setSize(Vector2f(200,50));
 	fonte = new Font();
-	//fonte.loadFromFile("/decoration/fonte/junction/Junction-regular.otf");
+	fonte->loadFromFile("Junction.otf");
 }
 
 PageGrilleDeJeu::~PageGrilleDeJeu() {
@@ -24,11 +24,11 @@ void PageGrilleDeJeu::afficher() {
 	zoneNom.setPosition(550,50);
 	this->fenetre->draw(zoneNom);
 
-	//nomX.setFont(fonte);
-	//nomX.setString("Nadine");
-	//nomX.setCharacterSize(24);
-	//nomX.setColor(Color::Green);
-	//nomX.setStyle(Text::Bold | Text::Underlined);
+	nomX.setFont(*fonte);
+	nomX.setString("Nadine");
+	nomX.setCharacterSize(24);
+	nomX.setColor(Color::Green);
+	nomX.setStyle(Text::Bold | Text::Underlined);
 
 	for(int colonne = 0; colonne < 3; colonne++)
 	{
