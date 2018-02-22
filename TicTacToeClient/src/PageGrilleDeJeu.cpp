@@ -11,7 +11,7 @@ PageGrilleDeJeu::PageGrilleDeJeu(RenderWindow* fenetre) {
 	caseBlanche.setOutlineThickness(5);
 	zoneNom.setSize(Vector2f(200,50));
 	fonte = new Font();
-	fonte->loadFromFile("Junction.otf");
+	fonte->loadFromFile("Debug/Junction.otf");
 }
 
 PageGrilleDeJeu::~PageGrilleDeJeu() {
