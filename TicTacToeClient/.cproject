@@ -44,6 +44,7 @@
 								</option>
 								<option id="gnu.cpp.link.option.libs.1131965993" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="sfml-graphics-s"/>
+									<listOptionValue builtIn="false" value="sfml-network-s"/>
 									<listOptionValue builtIn="false" value="sfml-window-s"/>
 									<listOptionValue builtIn="false" value="sfml-system-s"/>
 									<listOptionValue builtIn="false" value="opengl32"/>
@@ -51,6 +52,7 @@
 									<listOptionValue builtIn="false" value="jpeg"/>
 									<listOptionValue builtIn="false" value="winmm"/>
 									<listOptionValue builtIn="false" value="gdi32"/>
+									<listOptionValue builtIn="false" value="ws2_32"/>
 								</option>
 								<option id="gnu.cpp.link.option.userobjs.972388230" name="Other objects" superClass="gnu.cpp.link.option.userobjs" useByScannerDiscovery="false"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1508489102" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
@@ -82,7 +84,7 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.mingw.exe.release.130464751." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.exe.release.2093332504" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.exe.release">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.exe.release.1897715848" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.exe.release"/>
-							<builder buildPath="${workspace_loc:/TicTacToe}/Release" id="cdt.managedbuild.tool.gnu.builder.mingw.base.860734159" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base"/>
+							<builder autoBuildTarget="" buildPath="${workspace_loc:/TicTacToe}/Release" cleanBuildTarget="" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.tool.gnu.builder.mingw.base.860734159" incrementalBuildTarget="" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" parallelBuildOn="false" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.release.214348077" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.release">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.517470559" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -120,7 +122,7 @@
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/TicTacToe"/>
+			<resource resourceType="PROJECT" workspacePath="/TicTacToeClient"/>
 		</configuration>
 		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/TicTacToe"/>
@@ -139,7 +141,13 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.1429367985;cdt.managedbuild.config.gnu.mingw.exe.debug.1429367985.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.610043408;cdt.managedbuild.tool.gnu.c.compiler.input.782704984">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.2133188540;cdt.managedbuild.config.gnu.mingw.exe.debug.2133188540.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2081028475;cdt.managedbuild.tool.gnu.c.compiler.input.421300016">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.release.1443327314;cdt.managedbuild.config.gnu.mingw.exe.release.1443327314.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.release.1920108348;cdt.managedbuild.tool.gnu.cpp.compiler.input.72314053">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.2133188540;cdt.managedbuild.config.gnu.mingw.exe.debug.2133188540.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug.1827017966;cdt.managedbuild.tool.gnu.cpp.compiler.input.1050727623">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
